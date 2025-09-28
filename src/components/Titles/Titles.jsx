@@ -9,9 +9,6 @@ const Titles = () => {
         <div className={styles.titles}>
             <Segment title="Special Birthday Collection" />
             <Segment title="Our Love Story Moments" />
-            <Segment title="26 Reasons Why You're Amazing" />
-            <Segment title="Birthday Wishes & Dreams" />
-            <Segment title="Memories Worth Rewatching" />
         </div>
     );
 };
