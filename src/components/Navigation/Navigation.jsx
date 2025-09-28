@@ -6,7 +6,7 @@ import logo from './assets/logo.png';
 import styles from './Navigation.module.css';
 
 const Navigation = () => {
-    const navItems = ['Home', 'TV Shows', 'Movies', 'New & Popular', 'My List'];
+    const navItems = ['Beranda', 'Kenangan Kita', 'Momen Manis', 'Surprises', 'Wishlist 26'];
 
     return (
         <div className={styles.navigation}>

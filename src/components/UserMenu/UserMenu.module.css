@@ -1,6 +1,18 @@
-.user {
+.userMenu {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.userProfile {
     width: 35px;
     height: 35px;
-    background-color: grey;
     border-radius: 4px;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.2s ease;
+}
+
+.userProfile:hover {
+    opacity: 0.8;
 }
