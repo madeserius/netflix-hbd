@@ -24,7 +24,7 @@ const ProfileSelector = ({ onProfileSelect }) => {
     return (
         <div className={styles.profileSelector}>
             <div className={styles.container}>
-                <h1 className={styles.title}>Siapa yang menonton?</h1>
+                <h1 className={styles.title}>Siap untuk menonton?</h1>
 
                 <div className={styles.profilesGrid}>
                     {profiles.map((profile) => (
