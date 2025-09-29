@@ -1,0 +1,304 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.modal {
+    background-color: #181818;
+    border-radius: 6px;
+    max-width: 850px;
+    width: 100%;
+    max-height: 90vh;
+    position: relative;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.closeButton {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(42, 42, 42, 0.8);
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: background-color 0.2s ease;
+}
+
+.closeButton:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.videoContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.video {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.videoPlaceholder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.videoOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent 0%, transparent 50%, rgba(24,24,24,0.8) 80%, #181818 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.videoControls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.playButton {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.playButton:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+.videoInfo {
+    padding: 24px;
+    color: white;
+}
+
+.titleSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+    flex: 1;
+}
+
+.actionButtons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.playBtn {
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 24px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+.playBtn:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.iconButton {
+    background: rgba(42, 42, 42, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.iconButton:hover {
+    border-color: white;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.metaInfo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    font-size: 0.9rem;
+}
+
+.year {
+    color: #46d369;
+    font-weight: bold;
+}
+
+.duration {
+    color: #b3b3b3;
+}
+
+.quality {
+    border: 1px solid #b3b3b3;
+    padding: 2px 6px;
+    border-radius: 2px;
+    font-size: 0.8rem;
+    color: #b3b3b3;
+}
+
+.rating {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 2px 6px;
+    border-radius: 2px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.genres {
+    font-size: 0.9rem;
+    color: #b3b3b3;
+}
+
+.genreLabel {
+    color: #777;
+}
+
+/* Fullscreen Video Styles */
+.fullscreenVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fullscreenCloseButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10001;
+    transition: background-color 0.2s ease;
+}
+
+.fullscreenCloseButton:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.youtubePlayer {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .modal {
+        max-width: 95%;
+        margin: 20px;
+    }
+
+    .video {
+        height: 300px;
+    }
+
+    .videoInfo {
+        padding: 16px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .titleSection {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+    }
+
+    .playButton {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .video {
+        height: 250px;
+    }
+
+    .title {
+        font-size: 1.3rem;
+    }
+
+    .videoInfo {
+        padding: 12px;
+    }
+}
